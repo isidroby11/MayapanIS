@@ -15,5 +15,6 @@ public class MoveLeftANdRight : MonoBehaviour
 	void Update ()
     {
         transform.position += Vector3.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-	}
+        transform.position += Vector3.forward * Input.GetAxis("Vertical") * speed * Time.deltaTime;
+    }
 }
